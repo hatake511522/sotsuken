@@ -1,10 +1,10 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.7.15)  6 DEC 2021 16:34
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.7.15)  21 DEC 2021 18:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/hatake/Documents/tus/shouroku/tus 2/4616072_hatake.tex"
-(/Users/hatake/Documents/tus/shouroku/tus 2/4616072_hatake.tex
+**/Users/hatake/Documents/tus/shouroku/data/4616072_hatake.tex
+(/Users/hatake/Documents/tus/shouroku/data/4616072_hatake.tex
 pLaTeX2e <2020-02-02u03>+3 (based on LaTeX2e <2020-02-02> patch level 5)
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/uplatex/base/ujarticle.cls
 Document Class: ujarticle 2020/01/03 v1.8e-u00 Standard upLaTeX class
@@ -51,108 +51,123 @@ File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen153
 \Gin@req@width=\dimen154
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/here/here.sty) (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count176
+\float@exts=\toks17
+\float@box=\box61
+\@float@everytoks=\toks18
+\@floatcapt=\box62
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2020-03-12 L3 backend support: dvipdfmx
-\g__graphics_track_int=\count176
-\l__pdf_internal_box=\box61
-\g__pdf_backend_object_int=\count177
-\g__pdf_backend_annotation_int=\count178
+\g__graphics_track_int=\count177
+\l__pdf_internal_box=\box63
+\g__pdf_backend_object_int=\count178
+\g__pdf_backend_annotation_int=\count179
 ) (./4616072_hatake.aux)
 \openout1 = `4616072_hatake.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+\c@mpl=\count180
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 12.
+(Font)              scaled to size 16.62714pt on input line 42.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 16.62714pt on input line 12.
+(Font)              scaled to size 16.62714pt on input line 42.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 12.
+(Font)              scaled to size 11.54663pt on input line 42.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 12.
+(Font)              scaled to size 11.54663pt on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 42.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 42.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 12.
+(Font)              scaled to size 7.69775pt on input line 42.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 12.
+(Font)              scaled to size 5.77332pt on input line 42.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 14.
+(Font)              scaled to size 13.85594pt on input line 44.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 14.
+(Font)              scaled to size 13.85594pt on input line 44.
 LaTeX Font Info:    Font shape `JT2/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 14.
+(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 14.
+(Font)              scaled to size 13.85594pt on input line 44.
 LaTeX Font Info:    Font shape `JY2/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 14.
+(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 14.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 14.
-File: kairo2.png Graphic file (type bmp)
-<kairo2.png>
-LaTeX Font Info:    Font shape `JT2/mc/b/n' in size <12> not available
-(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 37.
-LaTeX Font Info:    Font shape `JY2/mc/b/n' in size <12> not available
-(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 37.
+(Font)              scaled to size 13.85594pt on input line 44.
+File: images/kairo2.png Graphic file (type bmp)
+<images/kairo2.png>
  [1
 
 ]
+LaTeX Font Info:    Font shape `JT2/mc/b/n' in size <12> not available
+(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 66.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 66.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 66.
+LaTeX Font Info:    Font shape `JY2/mc/b/n' in size <12> not available
+(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 66.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 66.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 48.
+(Font)              <7> on input line 78.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 48.
+(Font)              <5> on input line 78.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 48.
+(Font)              scaled to size 6.73553pt on input line 78.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 48.
+(Font)              scaled to size 4.8111pt on input line 78.
+ [2]
+File: images/00_spectrum.png Graphic file (type bmp)
+<images/00_spectrum.png>
+File: images/01_spectrum.png Graphic file (type bmp)
+<images/01_spectrum.png>
+File: images/00_spectrum.png Graphic file (type bmp)
+<images/00_spectrum.png>
+File: images/11_spectrum.png Graphic file (type bmp)
+<images/11_spectrum.png>
+File: images/input_er.png Graphic file (type bmp)
+<images/input_er.png>
 File: images/and_result.png Graphic file (type bmp)
 <images/and_result.png>
 File: images/xor_result.png Graphic file (type bmp)
 <images/xor_result.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2] [3] (./4616072_hatake.aux) ) 
+ [3] [4] (./4616072_hatake.aux) ) 
 Here is how much of TeX's memory you used:
- 856 strings out of 481134
- 12994 string characters out of 5917333
- 257942 words of memory out of 5000000
- 16941 multiletter control sequences out of 15000+600000
- 540143 words of font info for 63 fonts, out of 8000000 for 9000
+ 955 strings out of 481134
+ 14513 string characters out of 5917333
+ 259174 words of memory out of 5000000
+ 17028 multiletter control sequences out of 15000+600000
+ 540478 words of font info for 64 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 30i,9n,25p,335b,321s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,10n,25p,377b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 4616072_hatake.dvi (3 pages, 9388 bytes).
+Output written on 4616072_hatake.dvi (4 pages, 13508 bytes).

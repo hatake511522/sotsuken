@@ -1,10 +1,10 @@
-PWD /Users/hatake/Documents/tus/shouroku/tus 2
+PWD /Users/hatake/Documents/tus/shouroku/data
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt
-INPUT /Users/hatake/Documents/tus/shouroku/tus 2/4616072_hatake.tex
+INPUT /Users/hatake/Documents/tus/shouroku/data/4616072_hatake.tex
 OUTPUT 4616072_hatake.log
 INPUT /usr/local/texlive/2020/texmf-dist/tex/uplatex/base/ujarticle.cls
 INPUT /usr/local/texlive/2020/texmf-dist/tex/uplatex/base/ujarticle.cls
@@ -22,6 +22,10 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/here/here.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/here/here.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT 4616072_hatake.aux
@@ -48,10 +52,20 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT kairo2.png
-INPUT extractbb -B cropbox -O kairo2.png
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT images/kairo2.png
+INPUT extractbb -B cropbox -O images/kairo2.png
 OUTPUT 4616072_hatake.dvi
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT images/00_spectrum.png
+INPUT extractbb -B cropbox -O images/00_spectrum.png
+INPUT images/01_spectrum.png
+INPUT extractbb -B cropbox -O images/01_spectrum.png
+INPUT images/00_spectrum.png
+INPUT images/11_spectrum.png
+INPUT extractbb -B cropbox -O images/11_spectrum.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
+INPUT images/input_er.png
+INPUT extractbb -B cropbox -O images/input_er.png
 INPUT images/and_result.png
 INPUT extractbb -B cropbox -O images/and_result.png
 INPUT images/xor_result.png
