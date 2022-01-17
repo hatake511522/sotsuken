@@ -1,10 +1,10 @@
 # Fdb version 3
-["dvipdf"] 1642402296 "4616072_hatake.dvi" "4616072_hatake.pdf" "4616072_hatake" 1642402298
-  "4616072_hatake.dvi" 1642402296 15412 8937d71b2c7776161df7acfb70222d56 "latex"
+["dvipdf"] 1642411497 "4616072_hatake.dvi" "4616072_hatake.pdf" "4616072_hatake" 1642411502
+  "4616072_hatake.dvi" 1642411497 16408 486af79fff7e8ee8cb8ba5c3ef7c5aa8 "latex"
   (generated)
   "4616072_hatake.pdf"
-["latex"] 1642402295 "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" "4616072_hatake.dvi" "4616072_hatake" 1642402298
-  "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" 1642402293 12180 b6fcca23216a01cda4eca3750887dbd8 ""
+["latex"] 1642411495 "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" "4616072_hatake.dvi" "4616072_hatake" 1642411502
+  "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" 1642411491 13666 be33fddb7d086efeef3c250959a299e8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -23,20 +23,22 @@
   "/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty" 1580683321 3976 d7fa7d81d2870d509d25b17d0245e735 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/here/here.sty" 1258935436 439 d908692e0f19922874ccfe2bf35addc7 ""
   "/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def" 1584044900 22137 8b7da88a947f6bb7c387641065b48c80 ""
+  "/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1137111090 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "/usr/local/texlive/2020/texmf-dist/tex/uplatex/base/ujarticle.cls" 1580682677 25754 d6b51a43236c02c2ad673103d1ba6a9e ""
   "/usr/local/texlive/2020/texmf-dist/tex/uplatex/base/ujsize10.clo" 1580682677 8651 7c927117a006d6d20783eba0d05c16bd ""
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1594783934 2441660 fbce9cc2ce73db91f3f7ca2feabb4594 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "4616072_hatake.aux" 1642402296 2576 435874e39d4042ba92144ca784c975e0 "latex"
-  "4616072_hatake.tex" 1642402293 12180 b6fcca23216a01cda4eca3750887dbd8 ""
+  "4616072_hatake.aux" 1642411497 2445 5f6e60536134df114d863a86e428a716 "latex"
+  "4616072_hatake.tex" 1642411491 13666 be33fddb7d086efeef3c250959a299e8 ""
   "images/00_spectrum.png" 1640076973 70285 9431dae71ef31d3e50928d9b748865ac ""
   "images/01_spectrum.png" 1640076970 89252 ab353cab1d273717bc21ecaaf604b6eb ""
-  "images/11_spectrum.png" 1640077388 123572 c58365486c3ac0da6fd9940cef2fa6f0 ""
+  "images/11_spectrum.png" 1642406826 512124 3ed2f972cd427b542f354a41824f720f ""
   "images/AND_RESULT.png" 1642401896 95739 9d2d102f5bcdd3d80884aea7488ea65b ""
   "images/XOR_RESULT.png" 1642401832 92301 abcf9f34d5cd1e7a774827d466b526c0 ""
-  "images/kairo.png" 1642054670 168115 9ceb6c526e44760765c646a7792a72b3 ""
+  "images/input_output.png" 1642407928 373593 026264857863afd4140a220c15cea40f ""
+  "images/kairo.png" 1642411464 199753 1280d349716a00e119ff237bbef6eeac ""
   (generated)
   "4616072_hatake.dvi"
-  "4616072_hatake.log"
   "4616072_hatake.aux"
+  "4616072_hatake.log"

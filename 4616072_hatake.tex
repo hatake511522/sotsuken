@@ -1,6 +1,7 @@
 \documentclass[dvipdfmx]{ujarticle}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{here}
+\usepackage{wrapfig}
 %% 高さの設定
 \setlength{\textheight}{\paperheight}   % ひとまず紙面を本文領域に
 \setlength{\topmargin}{-5.4mm}      % 上の余白を20mm(=1inch-5.4mm)に
@@ -33,6 +34,31 @@
     \baselineskip=\textheight
     \divide\baselineskip by #1
 }
+\makeatletter %セクションの書式を設定
+\def\section{\@startsection{section}{1}{\z@}
+   {0.8\Cvs \@plus.5\Cdp \@minus.2\Cdp}
+   {0.2\Cvs \@plus.3\Cdp}
+   {\normalfont \Large \bfseries}}
+\makeatother
+\makeatletter
+\def\subsection{\@startsection{subsection}{1}{\z@}	%サブセクションの書式を設定
+   {0.8\Cvs \@plus.5\Cdp \@minus.2\Cdp}
+   {0.2\Cvs \@plus.3\Cdp}
+   {\normalfont \normalsize \bfseries}}
+\makeatother
+
+\makeatletter %セクションの書式を設定
+\def\section{\@startsection{section}{1}{\z@}
+   {0.8\Cvs \@plus.5\Cdp \@minus.2\Cdp}
+   {0.2\Cvs \@plus.3\Cdp}
+   {\normalfont \Large \bfseries}}
+\makeatother
+\makeatletter
+\def\subsection{\@startsection{subsection}{1}{\z@}	%サブセクションの書式を設定
+   {0.8\Cvs \@plus.5\Cdp \@minus.2\Cdp}
+   {0.2\Cvs \@plus.3\Cdp}
+   {\normalfont \normalsize \bfseries}}
+\abovecaptionskip=-5pt 
 
 \title{単一QD-SOAを用いた全光XOR-AND回路}
 \author{4616072 畑洋樹}
@@ -54,13 +80,13 @@
   現在の光通信では,信号処理を行う際に一度光信号から電気信号へと変換するため,通信速度の最大値が電気信号の処理速度に依存してしまうという課題がある.
   従って電気信号への変換処理が必要ない全光信号処理技術を構成する全光論理回路の研究が進められている.
   また,従来研究として実装されている全光論理回路の多くは光がデバイスに入射した際に発生する非線形光学効果を利用している.
-  その中でも量子ドット半導体光増幅器(Quantum-Dot Semiconductor Optical Amplifiers: QD-SOA)を用いた全光論理回路が提案されている.
-  QD-SOAは量子ドット構造の活性層を持つ光増幅器のことであり,電子を量子ドット内に閉じ込めることで従来の光増幅器よりも大きな利得を得ることができる. \\
-  従来研究として提案されている全光XOR回路ではマッハツェエンダー干渉計(Mach-Zehnder Interferometer:MZI)を用いた回路が提案されている.
+  その中でも量子ドット半導体光増幅器(Quantum-Dot Semiconductor Optical Amplifiers: QD-SOA)を用いた全光論理回路が提案されている.\\
+  　従来研究として提案されている全光XOR回路ではマッハツェエンダー干渉計(Mach-Zehnder Interferometer:MZI)を用いた回路が提案されている.
   しかし,MZIを用いた全光回路は同一特性のQD-SOAを2つ使用しなければならず,同一特性のQD-SOAを製造することは非常に困難という問題がある.
-  上記の問題点を踏まえ、特定の波長の光を切り出すデバイスであるOptical Filter(OF)の波長を任意に変更することで出力としてXOR回路としてだけでなくAND回路としても使用できる.
+  上記の問題点を踏まえ、特定の波長の光を切り出すデバイスであるOptical Filter(OF)の波長を任意に変更することで出力としてXOR回路としてだけでなくAND回路としても使用でき,半加算器として使用する.
 
-\section{従来研究}
+\section{QD-SOA}
+  QD-SOAは量子ドット構造の活性層を持つ光増幅器のことであり,電子を量子ドット内に閉じ込めることで従来の光増幅器よりも大きな利得を得ることができる.
   \subsection{非線形光学効果}
     弱い光によって生じる光の直進,屈折,回折といった様々な光学効果はすべて線形光学効果と呼ばれる.
     ここでいう線形とは光に対する物質の応答が光電場によって比例しているということである.
@@ -80,7 +106,7 @@
       \caption{提案する全光半加算器の構成}
     \end{center}
   \end{figure}
-  提案する全光回路ではまず, 入力光A,Bを複数の光を合波するデバイスであるPowerCombiner(PC)に入射させる.
+  図1に提案する全光半加算器を示す.提案回路ではまず, 入力光A,BをPowerCombiner(PC)に入射し光を合波する.
   その後合波された光とクロック光をQD-SOAに入力させることにより,光スペクトルが変化する.
   最後に特定の波長の光を切り出すデバイスであるOptical Filter(OF)を用いて基本論理回路として必要な波長のみを取り出し最終的な出力光とする.
   \subsection{光フィルタの波長選択}
@@ -91,23 +117,23 @@
         \begin{minipage}[t]{0.45\hsize}
           \centering
           \includegraphics[width=7cm]{images/00_spectrum.png}
-          \caption{入力光A=0, 入力光B=0の場合のスペクトラム}
+          \caption{A=0,B=0の場合のスペクトラム}
         \end{minipage} &
         \begin{minipage}[t]{0.45\hsize}
           \centering
           \includegraphics[width=7cm]{images/01_spectrum.png}
-          \caption{入力光A=1, 入力光B=0の場合のスペクトラム}
+          \caption{A=1,B=0の場合のスペクトラム}
         \end{minipage}
         \\
         \begin{minipage}[t]{0.45\hsize}
           \centering
           \includegraphics[width=7cm]{images/01_spectrum.png}
-          \caption{入力光A=0, 入力光B=1の場合のスペクトラム}
+          \caption{A=0,B=1の場合のスペクトラム}
         \end{minipage} &
         \begin{minipage}[t]{0.45\hsize}
           \centering
           \includegraphics[width=7cm]{images/11_spectrum.png}
-          \caption{入力光A=1, 入力光B=1の場合のスペクトラム}
+          \caption{A=1,B=1の場合のスペクトラム}
         \end{minipage}
       \end{tabular}
     \end{figure}
@@ -123,67 +149,68 @@
     \end{itemize}
 
 \section{シミュレーション}
-  \subsection{条件及び評価指標}
     本研究では OptiSystem16.1.0, MATLAB 2019a を用いてシミュレーションを行った.
     QD-SOAは光の伝搬方程式, キャリアのレート方程式及び伝達行列法(Transfer Matrix Method:TMM)を用いてシミュレーションを行った.ビットレートは160Gbpsとした.
     光の伝搬方程式はQD-SOA内の光電界に関する式であり,キャリアのレート方程式はQD-SOA内の時間変化によるキャリアの変化を表す式である.
     また,伝達行列法はQD-SOAを光の伝搬方向に対して細かく分割しキャリア密度, 光子密度, 利得を繰り返し求めることで結果的に出力される光電界を求める手法である.
-    今回シミュレーションで使用するパラメータは表1[1]に示したものを用いた.\\
+    今回シミュレーションで使用するパラメータは表1に示したものを用いた.\\
     　シミュレーションでは入力光強度と各演算に対応する光フィルタの指定波長を変化させ、それぞれの条件に対する消光比が最も高くなるようなパラメータ探索を行う.
     なお,各演算に対応する光フィルタの指定波長はスペクトラムの広がりから指定する.
     \begin{table}[H]
-      \caption{シミュレーションで用いるパラメータ}
+      \caption{シミュレーションで用いるパラメータ[1]}
       \centering
-        \begin{tabular}{ccc}
+        \begin{tabular}{ccc||ccc}
           \hline
-          パラメータ名 & 値 & 単位 \\
+          パラメータ名 & 値 & 単位 & パラメータ名 & 値 & 谷\\
           \hline
-          QD-SOAの長さ & $ 3.0 \times 10^{-3} $ & $m$\\
-          QD-SOAの厚さ & $ 0.25 \times 10^{-6} $ & $m$\\
-          QD-SOAの幅 & $ 3.0 \times 10^{-6} $ & $m$\\
-          量子ドット密度 & $ 5.0 \times 10^{14} $ & $m^{-2}$\\
-          キャリア寿命(WL→ES) & $ 3.0 \times 10^{-12} $ & $s$ \\
-          キャリア寿命(ES→WL) & $ 1.0 \times 10^{-9} $ & $s$\\
-          キャリア寿命(WL→系外) & $ 2.0 \times 10^{-9} $ & $s$\\
-          キャリア寿命(ES→GS) & $ 0.16 \times 10^{-12} $ & $s$\\
-          キャリア寿命(GS→ES) & $ 1.2 \times 1o^{-12} $ & $s$\\
-          キャリア寿命(GS→系外) & $ 0.4 \times 10^{-9} $ & $s$\\
-          注入電流 & $5.0 \times 10^{-2}  $ & $A$\\
-          最大利得 & $12.0 $ & $cm^{-1}$\\
-          損失係数 & $2.0$ & $cm^{-1}$\\
+          QD-SOAの長さ & $ 3.0 \times 10^{-3} $ & $m$ & 注入電流 & $5.0 \times 10^{-2}  $ & $A$\\
+          QD-SOAの厚さ & $ 0.25 \times 10^{-6} $ & $m$ & 最大利得 & $12.0 $ & $cm^{-1}$\\
+          QD-SOAの幅 & $ 3.0 \times 10^{-6} $ & $m$ & 損失係数 & $2.0$ & $cm^{-1}$\\
+          量子ドット密度 & $ 5.0 \times 10^{14} $ & $m^{-2}$ & 線幅増大係数 & $ 12 $ & $-$ \\
+          キャリア寿命(WL→ES) & $ 3.0 \times 10^{-12} $ & $s$ & 入力A,Bの光強度 & $ 10$ & $\mathrm{dBm}$ \\
+          キャリア寿命(ES→WL) & $ 1.0 \times 10^{-9} $ & $s$ & クロック光強度 & $ -20 $ & $\mathrm{dBm}$\\
+          キャリア寿命(WL→系外) & $ 2.0 \times 10^{-9} $ & $s$ & $A$の波長 & $ 1552$ & $\mathrm{nm}$\\
+          キャリア寿命(ES→GS) & $ 0.16 \times 10^{-12} $ & $s$ & $B$の波長 & $ 1552$ & $\mathrm{nm}$\\
+          キャリア寿命(GS→ES) & $ 1.2 \times 1o^{-12} $ & $s$ & クロック光の波長 & $ 1550$ & $\mathrm{nm}$\\
+          キャリア寿命(GS→系外) & $ 0.4 \times 10^{-9} $ & $s$& 通過帯域幅 & $ 2 $ & $\mathrm{nm}$\\
+          群速度   & $ 8.3 \times 10^{-7}$ & $\mathrm{m/s}$\\
           \hline
         \end{tabular}
     \end{table}
 
-  \subsection{評価指標}
-    評価指標としてアイダイアグラム(eye diagram)および消光比(Extinction Ratio: ER)を用いる.
-    アイダイアグラムとは信号光を1ビット幅間隔で分割し,重ね合わせて描画したグラフのことであり,
-    消光比は ${P^1}_{min}$を “1” として出力された光の中で最も強度が弱いときの光強度の値,
-    ${P^0}_{min}$を “0” として出力された光の中で最も強度が強い時の光強度の値としたときに
-    $ER[dB] = 10 \log{10}{\frac{{P^1}_{min}}{{P^0}_{max}}}$ で算出される指標である.
-    この値が大きいほど出力光が “0” , “1” の区別がつきやすい優れた波形であることを示す.
-
-  \subsection{シミュレーション結果}
-    AND演算およびXOR演算を行った場合のシミュレーション結果をアイダイアグラムの形で描画すると図6,7のように表せる.
-    AND演算における消光比は14.88dB, XOR演算における消光比は11.03dBが得られた.
-    \begin{figure}[H]
-      \begin{tabular}{cc}
-        \begin{minipage}[t]{0.45\hsize}
-          \centering
-          \includegraphics[width=7cm]{images/AND_RESULT.png}
-          \caption{AND回路の結果}
-        \end{minipage} &
-        \begin{minipage}[t]{0.45\hsize}
-          \centering
-          \includegraphics[width=7cm]{images/XOR_RESULT.png}
-          \caption{XOR回路の結果}
-        \end{minipage}
-      \end{tabular}
-    \end{figure}
-
-\section{まとめ}
-  単一QD-SOAを用いた全光AND/XOR論理回路を提案した.
-  シミュレーション結果より論理回路の動作を確認でき, 評価指標から出力波形の品質は良好と見られる.
+\section{結果}
+  % \begin{wrapfigure}[55]{r}{0pt}{0.5\textwidth}
+  \begin{wrapfigure}{r}[0pt]{0.6\textwidth}
+    \centering
+    \includegraphics[clip,width=0.4\columnwidth]{images/input_output.png}
+    \caption{提案デバイスの入出力波形}
+    \begin{tabular}{cc}
+      \begin{minipage}[t]{0.5\hsize}
+        \centering
+        \includegraphics[clip,width=0.6\columnwidth]{images/AND_RESULT.png}
+        \caption{AND演算の\\アイダイアグラム}
+      \end{minipage} &
+      \begin{minipage}[t]{0.5\hsize}
+        \centering
+        \includegraphics[clip,width=0.6\columnwidth]{images/XOR_RESULT.png}
+        \caption{XOR演算の\\アイダイアグラム}
+      \end{minipage}
+    \end{tabular}
+  \end{wrapfigure}
+  AND演算およびXOR演算を行った場合のシミュレーション結果の入出力波形を図6に,アイダイアグラムを図7,8に示す.\\
+  　ここで,本研究では評価指標としてアイダイアグラム(eye diagram)および消光比(Extinction Ratio: ER)を用いる.
+  アイダイアグラムとは信号光を1ビット幅間隔で分割し,重ね合わせて描画したグラフのことであり,
+  消光比は ${P^1}_{min}$を “1” として出力された光の中で最も強度が弱いときの光強度の値,
+  ${P^0}_{min}$を “0” として出力された光の中で最も強度が強い時の光強度の値としたときに\par
+  \begin{center}
+    ER[dB] = $10 \log{10}{\frac{{P^1}_{min}}{{P^0}_{max}}}$
+  \end{center}
+  で算出される指標である.
+  この値が大きいほど出力光が “0” , “1” の区別がつきやすい優れた波形であることを示す.
+  AND演算における消光比は14.88dB, XOR演算における消光比は11.03dBが得られた.
+\section{まとめと今後の課題}
+  単一QD-SOAを用いた全光半加算器を提案した.
+  シミュレーション結果より論理回路の動作を確認でき, 評価指標からもAND演算,XOR演算共に期待通り動作していることがわかる.
   今後の課題としてより現実状態に近い性能評価を行うため,QD-SOA内で生じるASE雑音の考慮が挙げられる.
 
 \begin{thebibliography} {99}
