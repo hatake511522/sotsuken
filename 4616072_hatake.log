@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.7.15)  17 JAN 2022 18:24
+This is e-upTeX, Version 3.14159265-p3.8.3-u1.26-191112-2.6 (utf8.uptex) (TeX Live 2020) (preloaded format=uplatex 2020.7.15)  17 JAN 2022 21:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -74,66 +74,66 @@ File: l3backend-dvipdfmx.def 2020-03-12 L3 backend support: dvipdfmx
 ) (./4616072_hatake.aux)
 \openout1 = `4616072_hatake.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
 \c@mpl=\count181
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 86.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 86.
 LaTeX Font Info:    Font shape `JT2/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 71.
+(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 71.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 86.
 LaTeX Font Info:    Font shape `JY2/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 71.
+(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 71.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 86.
 LaTeX Font Info:    Font shape `JT2/mc/b/n' in size <10> not available
-(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 90.
+(Font)              Font shape `JT2/mc/bx/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 90.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 90.
+(Font)              scaled to size 9.6222pt on input line 105.
 LaTeX Font Info:    Font shape `JY2/mc/b/n' in size <10> not available
-(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 90.
+(Font)              Font shape `JY2/mc/bx/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 90.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 90.
-File: images/kairo.png Graphic file (type bmp)
-<images/kairo.png>
+(Font)              scaled to size 9.6222pt on input line 105.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 127.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 127.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 127.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 4.8111pt on input line 127.
  [1
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 116.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 116.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 116.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.8111pt on input line 116.
+File: images/kairo.png Graphic file (type bmp)
+<images/kairo.png>
 File: images/00_spectrum.png Graphic file (type bmp)
 <images/00_spectrum.png>
 File: images/01_spectrum.png Graphic file (type bmp)
@@ -142,26 +142,26 @@ File: images/01_spectrum.png Graphic file (type bmp)
 <images/01_spectrum.png>
 File: images/11_spectrum.png Graphic file (type bmp)
 <images/11_spectrum.png>
- [2]
+
+Overfull \hbox (24.00002pt too wide) in paragraph at lines 155--178
+[][][][] 
+ []
+
+[2]
 File: images/input_output.png Graphic file (type bmp)
 <images/input_output.png>
 File: images/AND_RESULT.png Graphic file (type bmp)
 <images/AND_RESULT.png>
 File: images/XOR_RESULT.png Graphic file (type bmp)
 <images/XOR_RESULT.png>
-
-Overfull \hbox (24.00002pt too wide) in paragraph at lines 187--199
- [][][][] 
- []
-
-[3] [4] (./4616072_hatake.aux) ) 
+ [3] [4] (./4616072_hatake.aux) ) 
 Here is how much of TeX's memory you used:
- 995 strings out of 481134
- 15026 string characters out of 5917333
+ 989 strings out of 481134
+ 14981 string characters out of 5917333
  263691 words of memory out of 5000000
- 17071 multiletter control sequences out of 15000+600000
- 536801 words of font info for 50 fonts, out of 8000000 for 9000
+ 17066 multiletter control sequences out of 15000+600000
+ 536466 words of font info for 49 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 30i,11n,25p,333b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,10n,25p,334b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 4616072_hatake.dvi (4 pages, 16408 bytes).
+Output written on 4616072_hatake.dvi (4 pages, 17988 bytes).

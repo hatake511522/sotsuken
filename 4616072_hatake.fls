@@ -41,9 +41,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-v.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/uptex-fonts/jis/upjisg-h.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT 4616072_hatake.dvi
 INPUT images/kairo.png
 INPUT extractbb -B cropbox -O images/kairo.png
-OUTPUT 4616072_hatake.dvi
 INPUT images/00_spectrum.png
 INPUT extractbb -B cropbox -O images/00_spectrum.png
 INPUT images/01_spectrum.png
@@ -51,7 +51,6 @@ INPUT extractbb -B cropbox -O images/01_spectrum.png
 INPUT images/01_spectrum.png
 INPUT images/11_spectrum.png
 INPUT extractbb -B cropbox -O images/11_spectrum.png
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT images/input_output.png
 INPUT extractbb -B cropbox -O images/input_output.png
 INPUT images/AND_RESULT.png

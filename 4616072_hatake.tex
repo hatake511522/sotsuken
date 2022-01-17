@@ -59,6 +59,21 @@
    {0.2\Cvs \@plus.3\Cdp}
    {\normalfont \normalsize \bfseries}}
 \abovecaptionskip=-5pt 
+\makeatletter
+\def\mojiparline#1{		%一行当たりの文字数の再設定
+    \newcounter{mpl}
+    \setcounter{mpl}{#1}
+    \@tempdima=\linewidth
+    \advance\@tempdima by-\value{mpl}zw
+    \addtocounter{mpl}{-1}
+    \divide\@tempdima by \value{mpl}
+    \advance\kanjiskip by\@tempdima
+    \advance\parindent by\@tempdima
+}
+\def\linesparpage#1{
+    \baselineskip=\textheight
+    \divide\baselineskip by #1
+}
 
 \title{単一QD-SOAを用いた全光XOR-AND回路}
 \author{4616072 畑洋樹}
@@ -80,10 +95,10 @@
   現在の光通信では,信号処理を行う際に一度光信号から電気信号へと変換するため,通信速度の最大値が電気信号の処理速度に依存してしまうという課題がある.
   従って電気信号への変換処理が必要ない全光信号処理技術を構成する全光論理回路の研究が進められている.
   また,従来研究として実装されている全光論理回路の多くは光がデバイスに入射した際に発生する非線形光学効果を利用している.
-  その中でも量子ドット半導体光増幅器(Quantum-Dot Semiconductor Optical Amplifiers: QD-SOA)を用いた全光論理回路が提案されている.\\
-  　従来研究として提案されている全光XOR回路ではマッハツェエンダー干渉計(Mach-Zehnder Interferometer:MZI)を用いた回路が提案されている.
+  その中でも量子ドット半導体光増幅器(Quantum-Dot Semiconductor Optical Amplifiers: QD-SOA)を用いた全光論理回路が提案されている.\par
+  従来研究として提案されている全光XOR回路ではマッハツェエンダー干渉計(Mach-Zehnder Interferometer:MZI)が多く用いられている.
   しかし,MZIを用いた全光回路は同一特性のQD-SOAを2つ使用しなければならず,同一特性のQD-SOAを製造することは非常に困難という問題がある.
-  上記の問題点を踏まえ、特定の波長の光を切り出すデバイスであるOptical Filter(OF)の波長を任意に変更することで出力としてXOR回路としてだけでなくAND回路としても使用でき,半加算器として使用する.
+  上記の問題点を踏まえ、特定の波長の光を切り出すデバイスであるOptical Filter(OF)の波長を任意に変更することで,出力としてXOR回路としてだけでなくAND回路としても使用でき,半加算器として使用する.
 
 \section{QD-SOA}
   QD-SOAは量子ドット構造の活性層を持つ光増幅器のことであり,電子を量子ドット内に閉じ込めることで従来の光増幅器よりも大きな利得を得ることができる.
@@ -92,34 +107,58 @@
     ここでいう線形とは光に対する物質の応答が光電場によって比例しているということである.
     これは光の電界によって発生する分極によるものであるが,光の強度が大きくなると分極が光の強度に比例しなくなり非線形性が見られることがある.
     これが光の非線形光学効果の発生原理である.
-    \subsubsection{相互位相変調(XPM)}
-    光カー効果により物質の屈折率が変化することで物質を進む光の位相が変化する.
-    この現象を利用することでクロック光の強度を変化させることにより入射光の位相を制御させることができる.
-    \subsubsection{相互利得変調(XGM)}
-    QD-SOAの光の増幅利得は有限であり入力光強度が大きくなるとそれ以上光を増幅できない.
-      この特性を利用することでクロック光の強度を変化させることにより入射光の利得を制御させることができる.
+  \subsubsection{相互位相変調(XPM)}
+  光カー効果により物質の屈折率が変化することで物質を進む光の位相が変化する.
+  この現象を利用することで,クロック光の強度を変化させることにより入射光の位相を制御させることができる.
+  \subsubsection{相互利得変調(XGM)}
+  QD-SOAの光の増幅利得は有限であり,入力光強度が大きくなるとそれ以上光を増幅できない.
+  この特性を利用することで,クロック光の強度を変化させ,入射光の利得を制御させることができる.
+  \subsection{非線形光学効果によるスペクトルの広がり}
+    QD-SOAに複数の光を入射した場合,XPMやXGMは他の光のスペクトルを広げるという性質を有する.
+    入力光同士の強度は等しく,クロック光の強度のみが異なっている条件下で
+    クロック光が存在しない場合は,クロック光による非線形光学効果がQD-SOA内で生じないため入力光のスペクトルは広がらないが,
+    クロック光が存在する場合はmクロック光による非線形光学効果が生じるためクロック光のスペクトルが広がる.
 
 \section{提案する単一QD-SOAを用いた全光半加算器}
+\subsection{半加算器について}
+\begin{table}[H]
+    \centering
+    \caption{半加算器の動作}
+    \begin{tabular}{|cc|cc|}
+      \hline
+      X & Y & C & S \\ \hline
+      0 & 0 & 0 & 0 \\
+      0 & 1 & 0 & 1 \\
+      1 & 0 & 0 & 1 \\
+      1 & 1 & 1 & 0 \\
+      \hline
+    \end{tabular}
+\end{table}
+半加算器は1桁の2進数を2つ加算する.
+加算する値をX,Yとし桁上がりをC,和をSとすると表1の真理値表のように動作する.
+\subsection{提案回路の構成}
+図1に提案する全光半加算器を示す.提案回路ではまず, 入力光A,BをPowerCombiner(PC)に入射し光を合波する.
+その後合波された光とクロック光をQD-SOAに入力させることにより,光スペクトルが変化する.
+最後に特定の波長の光を切り出すデバイスであるOptical Filter(OF)を用いて基本論理回路として必要な波長のみを取り出し,
+それぞれXOR演算,AND演算として動作するよう出力する.
   \begin{figure}[H]
     \begin{center}
       \includegraphics[width=15cm]{images/kairo.png}
       \caption{提案する全光半加算器の構成}
     \end{center}
   \end{figure}
-  図1に提案する全光半加算器を示す.提案回路ではまず, 入力光A,BをPowerCombiner(PC)に入射し光を合波する.
-  その後合波された光とクロック光をQD-SOAに入力させることにより,光スペクトルが変化する.
-  最後に特定の波長の光を切り出すデバイスであるOptical Filter(OF)を用いて基本論理回路として必要な波長のみを取り出し最終的な出力光とする.
   \subsection{光フィルタの波長選択}
-    入力光の値によるQD-SOAからの出力スペクトラムを下記に示す. \\
-    光フィルタを用いて実践で囲った波長を分離するとXOR演算として機能し, 破線で囲った波長を分離するとAND演算として機能する.
+    QD-SOAから出力されるスペクトラムを入力光の値ごとにまとめると以下のようになる.
+    光フィルタを用いて実線で囲った波長を分離させるとXOR演算として機能し,破船で囲った波長を分離するとAND演算として機能する.
+    \begin{center}
     \begin{figure}[H]
       \begin{tabular}{cc}
-        \begin{minipage}[t]{0.45\hsize}
+        \begin{minipage}[t]{0.5\hsize}
           \centering
           \includegraphics[width=7cm]{images/00_spectrum.png}
           \caption{A=0,B=0の場合のスペクトラム}
         \end{minipage} &
-        \begin{minipage}[t]{0.45\hsize}
+        \begin{minipage}[t]{0.5\hsize}
           \centering
           \includegraphics[width=7cm]{images/01_spectrum.png}
           \caption{A=1,B=0の場合のスペクトラム}
@@ -137,25 +176,20 @@
         \end{minipage}
       \end{tabular}
     \end{figure}
-    \begin{itemize}
-      \item 入力光が互いに0の場合 \\
-      QD-SOA内で非線形光学効果が発生せずクロック光が大きく増幅される.
-      \item 入力光のどちらかのみが1の場合 \\
-      QD-SOA内で非線形光学効果であるXGMによって入力光に利得が奪われるためクロック光があまり増幅されない.
-      さらにXPMによってスペクトルが広がる.
-      \item 入力光が互いに1の場合 \\
-      XGMによってクロックはほとんど増幅されない.
-      さらにXPMによってどちらかが1の場合よりもスペクトルが大きく広がる
-    \end{itemize}
+  \end{center}
+    \textbf{入力光が互いに0の場合} \par
+    QD-SOA内で非線形光学効果が発生せずクロック光が大きく増幅される.\\
+    \textbf{入力光のどちらかのみが1の場合} \par
+    QD-SOA内で非線形光学効果であるXGMによって入力光に利得が奪われるためクロック光があまり増幅されない.さらにXPMによってスペクトルが大きく広がる.\\
+    \textbf{入力光が互いに1の場合}\par
+    XGMによってクロックはほとんど増幅されない.さらにXPMによってどちらかが1の場合よりもスペクトルが大きく広がる.\\
 
 \section{シミュレーション}
     本研究では OptiSystem16.1.0, MATLAB 2019a を用いてシミュレーションを行った.
     QD-SOAは光の伝搬方程式, キャリアのレート方程式及び伝達行列法(Transfer Matrix Method:TMM)を用いてシミュレーションを行った.ビットレートは160Gbpsとした.
     光の伝搬方程式はQD-SOA内の光電界に関する式であり,キャリアのレート方程式はQD-SOA内の時間変化によるキャリアの変化を表す式である.
     また,伝達行列法はQD-SOAを光の伝搬方向に対して細かく分割しキャリア密度, 光子密度, 利得を繰り返し求めることで結果的に出力される光電界を求める手法である.
-    今回シミュレーションで使用するパラメータは表1に示したものを用いた.\\
-    　シミュレーションでは入力光強度と各演算に対応する光フィルタの指定波長を変化させ、それぞれの条件に対する消光比が最も高くなるようなパラメータ探索を行う.
-    なお,各演算に対応する光フィルタの指定波長はスペクトラムの広がりから指定する.
+    今回シミュレーションで使用するパラメータは表1に示したものを用いた.
     \begin{table}[H]
       \caption{シミュレーションで用いるパラメータ[1]}
       \centering
@@ -177,47 +211,38 @@
           \hline
         \end{tabular}
     \end{table}
-
 \section{結果}
-  % \begin{wrapfigure}[55]{r}{0pt}{0.5\textwidth}
-  \begin{wrapfigure}{r}[0pt]{0.6\textwidth}
+  \begin{wrapfigure}{r}{0.6\textwidth}
     \centering
-    \includegraphics[clip,width=0.4\columnwidth]{images/input_output.png}
+    \includegraphics[width=0.4\columnwidth]{images/input_output.png}
     \caption{提案デバイスの入出力波形}
-    \begin{tabular}{cc}
-      \begin{minipage}[t]{0.5\hsize}
-        \centering
-        \includegraphics[clip,width=0.6\columnwidth]{images/AND_RESULT.png}
-        \caption{AND演算の\\アイダイアグラム}
-      \end{minipage} &
-      \begin{minipage}[t]{0.5\hsize}
-        \centering
-        \includegraphics[clip,width=0.6\columnwidth]{images/XOR_RESULT.png}
-        \caption{XOR演算の\\アイダイアグラム}
-      \end{minipage}
-    \end{tabular}
+    \includegraphics[width=0.2\columnwidth]{images/AND_RESULT.png}
+    \caption{AND演算の\\アイダイアグラム}
+    \includegraphics[width=0.2\columnwidth]{images/XOR_RESULT.png}
+    \caption{XOR演算の\\アイダイアグラム}
   \end{wrapfigure}
-  AND演算およびXOR演算を行った場合のシミュレーション結果の入出力波形を図6に,アイダイアグラムを図7,8に示す.\\
-  　ここで,本研究では評価指標としてアイダイアグラム(eye diagram)および消光比(Extinction Ratio: ER)を用いる.
+  AND演算およびXOR演算を行った場合のシミュレーション結果の入出力波形を図6に,アイダイアグラムを図7,8に示す.\par
+  上から入力A,入力B,各光フィルタ通過後の出力を表している.
+  1540nmの波長を取り出すOF通過後の出力はXOR演算として動作し,
+  1570nmの波長を取り出すOF通過後の出力はAND演算として動作していることが出力波形から読み取ることができる.
+  ここで,本研究では評価指標としてアイダイアグラム(eye diagram)および消光比(Extinction Ratio: ER)を用いる.
   アイダイアグラムとは信号光を1ビット幅間隔で分割し,重ね合わせて描画したグラフのことであり,
   消光比は ${P^1}_{min}$を “1” として出力された光の中で最も強度が弱いときの光強度の値,
-  ${P^0}_{min}$を “0” として出力された光の中で最も強度が強い時の光強度の値としたときに\par
+  ${P^0}_{min}$を “0” として出力された光の中で最も強度が強い時の光強度の値としたときに\\
   \begin{center}
     ER[dB] = $10 \log{10}{\frac{{P^1}_{min}}{{P^0}_{max}}}$
   \end{center}
   で算出される指標である.
-  この値が大きいほど出力光が “0” , “1” の区別がつきやすい優れた波形であることを示す.
-  AND演算における消光比は14.88dB, XOR演算における消光比は11.03dBが得られた.
+  この値が大きいほど出力光が “0” , “1” の区別がつきやすい優れた波形であることを示し信号品質が良いと判断することができる.
+  AND演算における消光比は14.88dB, XOR演算における消光比は11.03dBが得られたので160Gbsの高速伝送において良好なERが得られることがわかった.
+  
 \section{まとめと今後の課題}
   単一QD-SOAを用いた全光半加算器を提案した.
   シミュレーション結果より論理回路の動作を確認でき, 評価指標からもAND演算,XOR演算共に期待通り動作していることがわかる.
-  今後の課題としてより現実状態に近い性能評価を行うため,QD-SOA内で生じるASE雑音の考慮が挙げられる.
+  今後の課題としてより現実状態に近い性能評価を行うため,QD-SOA内で生じるASE雑音の考慮や提案デバイスを様々な回路に組み込んだ場合の性能評価が挙げられる.
 
 \begin{thebibliography} {99}
   \bibitem{1} H.Sun, Q.Wang, H.Dong and N.K.Dutta, “XOR performance of a quantum dot semiconductor optical amplifier based MachZehnder interferometer”, Department of Physics, University of Connecticut, Storrs, CT 06269, 2005.
-  \bibitem{2} E.Dimitriadou K.E.Zoiros, “All-Optical XOR Gate Using Single Quantum-Dot SOA and Optical Filter”, Journal of lightwave Technology, vol.31, NO.23, Dec. 2013.
-  \bibitem{3} 古松 幸輔, “All-optical NOR gate using a single quantum-dot SOA-assisted an optical filter,“ Opt, Quant. Electron., 東京理科大学平成 29 年度修士論文.
-  \bibitem{4} 北山研一著 光通信工学, オーム社, 2012.
 \end{thebibliography}
 
 \end{document}

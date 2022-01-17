@@ -1,12 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1642411497 "4616072_hatake.dvi" "4616072_hatake.pdf" "4616072_hatake" 1642411502
-  "4616072_hatake.dvi" 1642411497 16408 486af79fff7e8ee8cb8ba5c3ef7c5aa8 "latex"
+["dvipdf"] 1642421536 "4616072_hatake.dvi" "4616072_hatake.pdf" "4616072_hatake" 1642421539
+  "4616072_hatake.dvi" 1642421536 17988 ff403da1317d5d3b0bb6fa8fa4b4a0b6 "latex"
   (generated)
   "4616072_hatake.pdf"
-["latex"] 1642411495 "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" "4616072_hatake.dvi" "4616072_hatake" 1642411502
-  "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" 1642411491 13666 be33fddb7d086efeef3c250959a299e8 ""
+["latex"] 1642421535 "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" "4616072_hatake.dvi" "4616072_hatake" 1642421539
+  "/Users/hatake/Documents/tus/shouroku/抄録/4616072_hatake.tex" 1642421533 14710 2e706aa7a78a2e55d937b6fd0b0c85df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -29,16 +28,16 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/euptex/uplatex.fmt" 1594783934 2441660 fbce9cc2ce73db91f3f7ca2feabb4594 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "4616072_hatake.aux" 1642411497 2445 5f6e60536134df114d863a86e428a716 "latex"
-  "4616072_hatake.tex" 1642411491 13666 be33fddb7d086efeef3c250959a299e8 ""
+  "4616072_hatake.aux" 1642421536 2896 e89739d87fc808a3661233ada0aeae99 "latex"
+  "4616072_hatake.tex" 1642421533 14710 2e706aa7a78a2e55d937b6fd0b0c85df ""
   "images/00_spectrum.png" 1640076973 70285 9431dae71ef31d3e50928d9b748865ac ""
   "images/01_spectrum.png" 1640076970 89252 ab353cab1d273717bc21ecaaf604b6eb ""
   "images/11_spectrum.png" 1642406826 512124 3ed2f972cd427b542f354a41824f720f ""
   "images/AND_RESULT.png" 1642401896 95739 9d2d102f5bcdd3d80884aea7488ea65b ""
   "images/XOR_RESULT.png" 1642401832 92301 abcf9f34d5cd1e7a774827d466b526c0 ""
-  "images/input_output.png" 1642407928 373593 026264857863afd4140a220c15cea40f ""
-  "images/kairo.png" 1642411464 199753 1280d349716a00e119ff237bbef6eeac ""
+  "images/input_output.png" 1642418340 411127 8dea2079f10f918efc962e0535cc3d7d ""
+  "images/kairo.png" 1642418256 200328 f72b8c39bfec3317b7d792c0445e457d ""
   (generated)
-  "4616072_hatake.dvi"
   "4616072_hatake.aux"
   "4616072_hatake.log"
+  "4616072_hatake.dvi"
