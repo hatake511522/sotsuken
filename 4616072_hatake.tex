@@ -115,9 +115,8 @@
   この特性を利用することで,クロック光の強度を変化させ,入射光の利得を制御させることができる.
   \subsection{非線形光学効果によるスペクトルの広がり}
     QD-SOAに複数の光を入射した場合,XPMやXGMは他の光のスペクトルを広げるという性質を有する.
-    入力光同士の強度は等しく,クロック光の強度のみが異なっている条件下で
-    クロック光が存在しない場合は,クロック光による非線形光学効果がQD-SOA内で生じないため入力光のスペクトルは広がらないが,
-    クロック光が存在する場合はmクロック光による非線形光学効果が生じるためクロック光のスペクトルが広がる.
+    入力光同士の強度は等しく,クロック光の強度のみが異なっている条件下だとクロック光が存在しない場合,クロック光による非線形光学効果がQD-SOA内で生じずクロック光のスペクトルは広がらない.
+    クロック光が存在する場合,クロック光による非線形光学効果が生じるためクロック光のスペクトルが広がる.
 
 \section{提案する単一QD-SOAを用いた全光半加算器}
 \subsection{半加算器について}
@@ -171,7 +170,7 @@
         \end{minipage} &
         \begin{minipage}[t]{0.45\hsize}
           \centering
-          \includegraphics[width=7cm]{images/11_spectrum.png}
+          \includegraphics[width=7cm]{images/11_spectrum.eps}
           \caption{A=1,B=1の場合のスペクトラム}
         \end{minipage}
       \end{tabular}
@@ -214,11 +213,11 @@
 \section{結果}
   \begin{wrapfigure}{r}{0.6\textwidth}
     \centering
-    \includegraphics[width=0.4\columnwidth]{images/input_output.png}
+    \includegraphics[width=0.4\columnwidth]{images/input_output.eps}
     \caption{提案デバイスの入出力波形}
-    \includegraphics[width=0.2\columnwidth]{images/AND_RESULT.png}
+    \includegraphics[width=0.2\columnwidth]{images/AND_RESULT.eps}
     \caption{AND演算の\\アイダイアグラム}
-    \includegraphics[width=0.2\columnwidth]{images/XOR_RESULT.png}
+    \includegraphics[width=0.2\columnwidth]{images/XOR_RESULT.eps}
     \caption{XOR演算の\\アイダイアグラム}
   \end{wrapfigure}
   AND演算およびXOR演算を行った場合のシミュレーション結果の入出力波形を図6に,アイダイアグラムを図7,8に示す.\par

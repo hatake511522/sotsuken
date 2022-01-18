@@ -49,12 +49,12 @@ INPUT extractbb -B cropbox -O images/00_spectrum.png
 INPUT images/01_spectrum.png
 INPUT extractbb -B cropbox -O images/01_spectrum.png
 INPUT images/01_spectrum.png
-INPUT images/11_spectrum.png
-INPUT extractbb -B cropbox -O images/11_spectrum.png
-INPUT images/input_output.png
-INPUT extractbb -B cropbox -O images/input_output.png
-INPUT images/AND_RESULT.png
-INPUT extractbb -B cropbox -O images/AND_RESULT.png
-INPUT images/XOR_RESULT.png
-INPUT extractbb -B cropbox -O images/XOR_RESULT.png
+INPUT images/11_spectrum.eps
+INPUT images/11_spectrum.eps
+INPUT images/input_output.eps
+INPUT images/input_output.eps
+INPUT images/AND_RESULT.eps
+INPUT images/AND_RESULT.eps
+INPUT images/XOR_RESULT.eps
+INPUT images/XOR_RESULT.eps
 INPUT 4616072_hatake.aux
